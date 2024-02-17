@@ -1,0 +1,93 @@
+/* The Main Settings for The Page */ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+/* Set The Width For The Box That's Contain The Search Bar */ 
+.box
+{
+    max-width: 400px;
+    width: 100%;
+   
+}
+
+/* Set The Display Settings before Checking on The Icon and Add Some Style  */
+.box .search_bar{
+    position: relative;
+    height: 50px;
+    max-width: 50px;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    /* This gonna  make transition between two widths have some animation */
+    transition: all 0.3s ease;
+}
+
+/* Set The Display Settings before Checking on The Icon */
+#check:checked ~  .search_bar
+{
+    max-width: 380px;
+   
+}
+
+/* Set the display settings for search bar input and remove the borders and some sizing and alignment  */
+.search_bar input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    padding-left: 20px;
+    font-size: 15px;
+    background-color: #fff;
+    
+}
+
+/* Set the display settings for search icon before it be checked  with some sizing and alignment   */
+.search_bar .icon{
+    position: absolute;
+    background-color: #fff;
+    right: -2px;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius:  25px ;
+    color: aqua;
+    font-size: 20px;
+}
+
+/* Set the display settings after begin clicked with some coloring  */
+#check:checked ~ .search_bar .icon {
+    border-radius:  0 25px 25px 0;
+    background-color: aqua;
+    color: #fff;
+}
+
+/* Hide The Checkbox Input */
+#check{
+    display: none;
+}
+
+/* Add some style to the note for the user */
+h2{
+    position: absolute;
+    top:30px;
+    color:#fff;
+   
+}
