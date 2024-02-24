@@ -4,6 +4,6 @@
 <a href="https://ali-alahdal.github.io/Search_Bar/">View Page</a>
 
 
-<img src="/Search Bar.gif" />
+<img src="Seach Bar.gif" />
 
 
